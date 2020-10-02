@@ -1,0 +1,22 @@
+package Pilas3;
+
+import java.util.Scanner;
+
+public class Operaciones {
+	Scanner sc = new Scanner(System.in);
+	
+	int asignaTam() {
+		System.out.print("Introduzca tamaño de pila: ");
+        return sc.nextInt();
+	}
+	
+	int introduceDato() {
+		System.out.print("Introduzca dato a la pila: ");
+		return sc.nextInt();
+	}
+	
+	Integer retiraDato(Integer val) {
+		System.out.println("Se retiró: " + val);
+		return val;
+	}
+}

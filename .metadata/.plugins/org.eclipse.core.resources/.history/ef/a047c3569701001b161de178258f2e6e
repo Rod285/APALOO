@@ -1,0 +1,22 @@
+package Pilas3;
+
+public class Operacioes {
+	
+	switch (Principal.op) {
+	case 1: System.out.println("Introduzca tamaño de pila");
+	        tamarr = sc.nextInt();
+            p1 = new Pila(tamarr);
+            break;
+	case 2: System.out.println("Introduzca dato a la pila");
+            p1.push(sc.nextInt());
+            break;
+    case 3: //int x = p1.pop();
+    		//if (x != -1) {
+    			System.out.println(p1.pop());
+    		//}
+    		break;
+    case 4: System.out.println("Fin del programa");
+            break;
+    default: System.out.println("Opción no valida");
+}
+}

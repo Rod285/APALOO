@@ -1,0 +1,41 @@
+package Pilas3;
+
+public class Pila {
+	private int[] stk;
+	private int tope =-1;
+	
+	Pila() {
+		stk = new int[10];
+	}
+	
+	Pila(int tampila) {
+		stk = new int[tampila];
+	}
+	
+	int getTamArr() {
+		return stk.length;
+	}
+	
+	void push(int num) {
+		
+		if(tope == (stk.length)-1) {
+			System.out.println("La Pila está llena");
+		} else {
+			tope++;
+			stk[tope] = num;
+		}
+	}
+	
+	Integer pop() {
+		Integer dato = null;
+		
+		System.out.println(dato.MAX_VALUE); 
+		if(tope == -1) {
+			System.out.println("La Pila está vacia");
+		} else {
+			dato = stk[tope];
+			tope--;
+		}
+		return dato;
+	}
+}

@@ -1,0 +1,16 @@
+package Pilas3;
+
+import java.util.Scanner;
+
+public class Menu {
+	Scanner sc = new Scanner(System.in);
+	
+	int muestraMenu() {
+			System.out.println("\n1.- Tamaño de Pila (El tamaño por defecto es 3)");
+			System.out.println("2.- Push");
+			System.out.println("3.- Pop");
+			System.out.println("4.- Salir");
+			System.out.print("Seleccione una opción: ");
+			return sc.nextInt();
+	}
+}
