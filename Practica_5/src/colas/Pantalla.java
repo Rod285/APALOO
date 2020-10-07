@@ -6,6 +6,32 @@ import java.util.Scanner;
 public class Pantalla {
 	Scanner sc = new Scanner(System.in);
 	
+	int muestraMenuPrincipal() {
+		int op = 0;
+		boolean bandera = false;
+		System.out.println("\n                MENÚ PRINCIPAL                ");
+		System.out.println("\n1.- Cola Lineal");
+		System.out.println("2.- Cola con Recorrido");
+		System.out.println("3.- Cola Circular");
+		System.out.println("4.- Salir");
+		System.out.print("Seleccione una opción: ");
+		do {
+			try {
+				op = sc.nextInt();
+				bandera = true;
+				if (op < 1 || op > 4) {
+					System.out.print("Seleccione una opción valida: ");
+					bandera = false;
+				}
+			}catch(InputMismatchException e) {
+			sc.nextLine();
+			System.out.print("Seleccione una opción valida: ");
+			bandera = false;
+			}
+		}while(bandera == false);
+		return op;
+	}
+	
 	int muestraMenu() {
 		int op = 0;
 		boolean bandera = false;
