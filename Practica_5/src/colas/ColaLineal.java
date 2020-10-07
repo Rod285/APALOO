@@ -8,6 +8,7 @@ public class ColaLineal {
 		cola = new int[tamcola];
 		front = 0;
 		rear = -1;
+		//System.out.println("En cola lineal");
 	}
 	
 	void encolar(int val) {

@@ -7,6 +7,7 @@ public class ColaRecorrido {
 	ColaRecorrido(int tamcola){
 		cola = new int[tamcola];
 		rear = -1;
+		//System.out.println("En cola con recorrido");
 	}
 	
 	void encolar(int val) {

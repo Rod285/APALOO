@@ -8,6 +8,7 @@ public class ColaCircular {
 		cola = new int[tamcola+1];
 		front = cola.length-1;
 		rear = cola.length-1;
+		//System.out.println("En cola circular");
 	}
 	
 	void encolar(int val) {
