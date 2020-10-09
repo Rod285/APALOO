@@ -53,7 +53,7 @@ public class ColaRecorrido {
 		}else {
 			System.out.println("Los valores en la cola son: ");
 			for(int i = 0; i<=rear;i++)
-				System.out.println(cola[i]);
+				System.out.print(cola[i] + " ");
 		}
 	}
 

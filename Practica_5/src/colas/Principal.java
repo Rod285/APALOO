@@ -52,4 +52,3 @@ public class Principal {
 	System.out.println("Fin del programa");
 	}
 }
-

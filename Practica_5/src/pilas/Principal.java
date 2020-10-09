@@ -10,7 +10,7 @@ public class Principal {
 		
 		System.out.print("Introduzca operación en postfija: ");
 		cadena = sc.nextLine();
-		System.out.println("longitud cadena " + cadena.length());
+		//System.out.println("longitud cadena " + cadena.length());
 		Pila p = new Pila(cadena.length());
 		
 		System.out.println("Resultado = " + p.evaluaCadenaPostfija(cadena));

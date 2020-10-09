@@ -38,18 +38,20 @@ public class Pila {
 		int resultado = 0;
 		int ope1 = 0;
 		int ope2 = 0;
-		System.out.println("La cadena es: " + cadena);
+		char carac;
+		//System.out.println("La cadena es: " + cadena);
 		for(int i = 0; i < cadena.length(); i++) {
-			if(cadena.charAt(i) != '+' && cadena.charAt(i) != '-' && cadena.charAt(i) != '*' && cadena.charAt(i) != '/' && cadena.charAt(i) != '^') {
-				System.out.println("Caracter actual: " + cadena.charAt(i));
-				push(Character.getNumericValue(cadena.charAt(i)));
+			carac = cadena.charAt(i);
+			if(carac != '+' && carac != '-' && carac != '*' && carac != '/' && carac != '^') {
+				//System.out.println("Caracter actual: " + cadena.charAt(i));
+				push(Character.getNumericValue(carac));
 			}else {
 				ope2 = pop();
-				System.out.println("Operando 2: " + ope2);
+				//System.out.println("Operando 2: " + ope2);
 				ope1 = pop();
-				System.out.println("Operando 1: " + ope1);
-				System.out.println("Operador: " + cadena.charAt(i));
-				switch (cadena.charAt(i)) {
+				//System.out.println("Operando 1: " + ope1);
+				//System.out.println("Operador: " + cadena.charAt(i));
+				switch (carac) {
 					case 43: push(ope1 + ope2);
 							break;
 					case 45: push(ope1 - ope2);

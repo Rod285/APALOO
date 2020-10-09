@@ -51,7 +51,7 @@ public class ColaLineal {
 		}else {
 			System.out.println("Los valores en la cola son: ");
 			for(int i = front; i<=rear;i++)
-				System.out.println(cola[i]);
+				System.out.print(cola[i] + " ");
 		}
 	}
 }

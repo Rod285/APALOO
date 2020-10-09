@@ -59,7 +59,7 @@ public class ColaCircular {
 			int i = front;
 			int j = rear;
 			while(i!=j) {
-				System.out.println(cola[siguiente(i)]);
+				System.out.print(cola[siguiente(i)] + " ");
 				i = siguiente(i);
 			}
 		}
