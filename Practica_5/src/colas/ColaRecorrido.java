@@ -1,3 +1,12 @@
+/*Autor: José Rodrigo Mejía Velázquez
+ *Fecha: 9/10/2020
+ *Descripción: Clase ColaRecorrido del proyecto Colas, contiene los atributos rear, así como un arreglo llamado cola, también cuenta
+ *			   con un constructor que recibe un entero para el tamaño del arreglo, además de inicializar rear en -1, incluye los
+ *			   métodos encolar, desencolar, vericaVacia y muestraDatos. A diferencia de la cola lineal para comprobar que la cola
+ *			   está vacía rear debe ser igual a -1, además que se deben de recorrer los valores dentro del arreglo para que el
+ *			   primer valor se ubique en la posición cero del arreglo. Se pueden agregar y borrar los datos cuantas veces se quiera.
+*/
+
 package colas;
 
 public class ColaRecorrido {

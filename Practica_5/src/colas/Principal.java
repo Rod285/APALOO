@@ -1,3 +1,9 @@
+/*Autor: José Rodrigo Mejía Velázquez
+ *Fecha: 9/10/2020
+ *Descripción: Clase principal de proyecto Colas, contiene la creación de las instancias de los tres tipos de Colas
+ *			   y el llamado de menús desde la clase Pantalla, así como el llamado de métodos a partir de cada una de las instancias. 
+*/
+
 package colas;
 
 public class Principal {

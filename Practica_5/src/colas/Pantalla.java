@@ -1,3 +1,12 @@
+/*Autor: José Rodrigo Mejía Velázquez
+ *Fecha: 9/10/2020
+ *Descripción: Clase Pantalla de proyecto Colas, contiene un objeto de tipo Scanner (sc) como
+ *			   atributo, así como los métodos Menú Principal que permite seleccionar el tipo de cola con el que deseamos trabajar,
+ *			   el método Menúu el cual muestra las opciones de acciones que el programa puede llevar a cabo, contiene validaciones
+ *			   y manejo de excepciones para que se seleccionen opciones correctas, también cuenta con otros métodos que funcionan
+ *			   como salidas del programa. 
+*/
+
 package colas;
 
 import java.util.InputMismatchException;

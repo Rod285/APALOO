@@ -1,3 +1,13 @@
+/*Autor: José Rodrigo Mejía Velázquez
+ *Fecha: 9/10/2020
+ *Descripción: Clase ColaCircular del proyecto Colas, contiene los atributos front y rear, así como un arreglo llamado cola,
+ *			   también cuenta con un constructor que recibe un entero para el tamaño del arreglo, además de inicializar rear y
+ *			   front, en la posición última del arreglo, incluye los métodos encolar, desencolar, vericaVacia y muestraDatos,
+ *			   además de los métodos siguiente y previo para desplazamiento circular. A diferencia de la cola con recorrido
+ *			   para comprobar que la cola está vacía rear debe ser igual a front. Se pueden agregar y borrar los datos cuantas
+ *			   veces se quiera.
+*/
+
 package colas;
 
 public class ColaCircular {
