@@ -7,7 +7,6 @@ public class ColaRecorrido {
 	ColaRecorrido(int tamcola){
 		cola = new int[tamcola];
 		rear = -1;
-		//System.out.println("En cola con recorrido");
 	}
 	
 	void encolar(int val) {
@@ -19,8 +18,8 @@ public class ColaRecorrido {
 		}
 	}
 	
-	int desencolar() {
-		int dato = 0;
+	Integer desencolar() {
+		Integer dato = null;
 		boolean vacia;
 		vacia = verificaVacia();
 		if(vacia == false) {

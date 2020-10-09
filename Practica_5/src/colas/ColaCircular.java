@@ -8,13 +8,10 @@ public class ColaCircular {
 		cola = new int[tamcola+1];
 		front = cola.length-1;
 		rear = cola.length-1;
-		//System.out.println("En cola circular");
 	}
 	
 	void encolar(int val) {
 		rear=siguiente(rear);
-		//System.out.println("Posición: " + rear);
-		//System.out.println("front: " + front);
 		if(rear==front) {
 			rear = previo(rear);
 			System.out.println("Cola llena");
@@ -23,18 +20,16 @@ public class ColaCircular {
 		}
 	}
 	
-	int desencolar() {
-		int dato = 0;
+	Integer desencolar() {
+		Integer dato = null;
 		boolean vacia;
 		vacia = verificaVacia();
-		front = siguiente(front);
 		if(vacia == true) {
 			System.out.println("Cola vacía");
-			front=previo(front);
 		}else {
+			front = siguiente(front);
 			dato = cola[front];
 		}
-		//System.out.println("front: " + front);
 		return dato;
 	}
 	
@@ -55,7 +50,6 @@ public class ColaCircular {
 			System.out.println("La cola está vacia");
 		}else {
 			System.out.println("Los valores en la cola son: ");
-			//for(int i = front; i<=rear; i++)
 			int i = front;
 			int j = rear;
 			while(i!=j) {

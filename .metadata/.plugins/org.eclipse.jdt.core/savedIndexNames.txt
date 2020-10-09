@@ -12,7 +12,6 @@ INDEX VERSION 1.131+C:\Users\JoséRodrigo\Desktop\APALOO\.metadata\.plugins\org.e
 1459523266.index
 1151569180.index
 364096953.index
-3623502816.index
 3572716771.index
 2772419465.index
 753608048.index
