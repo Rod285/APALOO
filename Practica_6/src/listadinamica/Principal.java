@@ -1,3 +1,9 @@
+/*Autor: José Rodrigo Mejía Velázquez
+ *Fecha: 13/10/2020
+ *Descripción: Clase principal de proyecto listadinamica, contiene la creación de los nodos y el llamado del método imprimeLista,
+ *			   el cual es llamado como estático. Adicionalmente contiene ejercicios sugeridos por el profesor.
+*/
+
 package listadinamica;
 
 public class Principal {
@@ -34,6 +40,9 @@ public class Principal {
 		System.out.println(" " + p.sigte.sigte.dato);
 		
 		Nodo.imprimeLista(p);
+		
+		//Es mejor que el método sea estático, ya que puede llegar a ser confuso el uso del método desde distintas instancias,
+		//además que se ahorra memoria al ser este único ya que las instancia no harían copias de este.
 		
 		//q = p.sigte;
 		//System.out.println(q.dato);
