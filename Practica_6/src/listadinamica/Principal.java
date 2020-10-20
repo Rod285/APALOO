@@ -79,9 +79,15 @@ public class Principal {
 		
 		System.out.println("Ejercicio 3");
 		
-		r.sigte = p;
+		/*r.sigte = p;
 		p.sigte = null;
-		p = q;
+		p = q;*/
+		
+		q = null;
+		r = null;
+		p.sigte.sigte.sigte = p;
+		p = p.sigte;
+		p.sigte.sigte.sigte = null;
 		Nodo.imprimeLista(p);
 	}
 
