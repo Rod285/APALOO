@@ -1,3 +1,9 @@
+/*Autor: José Rodrigo Mejía Velázquez
+ *Fecha: 04/11/2020
+ *Descripción: Clase Iterativos del proyecto iterativos vs recursivos, cuenta con los métodos factorial, fibonacci, suma de arreglo
+ *			   y máximo, los cuales han sido codificados para trabajar de forma iterativa.
+*/
+
 package itervsrec;
 
 public class Iterativos {

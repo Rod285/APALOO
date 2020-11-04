@@ -1,3 +1,10 @@
+/*Autor: José Rodrigo Mejía Velázquez
+ *Fecha: 04/11/2020
+ *Descripción: Clase Principal de proyecto iterativos vs recursivos, se lleva a cabo la prueba de los métodos factorial, fibonacci,
+ *			   suma de arreglo y máximo, los cuales son llamados de las clases Recursivos e Iterativos y han sido codificados de forma
+ *			   itretiva y recursiva.
+*/
+
 package itervsrec;
 
 import java.util.Random;
@@ -7,8 +14,8 @@ public class Principal {
 	public static void main(String[] args) {
 		Random r = new Random();
 		
-		int n = 10000; 		//131596284 es el número máximo que puede soportar mi equipo en la suma de arreglo iterativa, 31414 es
-		int[] arr = new int[n];	//el número máximo que puede soportar mi equipo en la suma de arreglo recursiva
+		int n = 1000; 			//131596284 es el número máximo que puede soportar mi equipo en la suma de arreglo iterativa, 31414
+		int[] arr = new int[n];	//es el número máximo que puede soportar mi equipo en la suma de arreglo recursiva.
 		
 		for(int i = 0; i < n; i++)
 			arr[i] = i+1;
@@ -26,7 +33,7 @@ public class Principal {
 		System.out.println("Fibonacci de 0: " + iter.fibonacci(0));
 		System.out.println("Fibonacci de 17: " + iter.fibonacci(17));
 		System.out.println("Fibonacci de 40: " + iter.fibonacci(40));
-		System.out.println("Suma de arreglo tamaño = 10000: " + iter.suma_arreglo(arr, n));
+		System.out.println("Suma de arreglo tamaño = 1000: " + iter.suma_arreglo(arr, n));
 		System.out.println("Máximo: " + iter.maximo(arr2, n));
 		
 		System.out.println();
@@ -39,7 +46,7 @@ public class Principal {
 		System.out.println("Fibonacci de 0: " + recu.fibonacci(0));
 		System.out.println("Fibonacci de 17: " + recu.fibonacci(17));
 		System.out.println("Fibonacci de 40: " + recu.fibonacci(40));
-		System.out.println("Suma de arreglo tamaño = 10000: " + recu.suma_arreglo(arr, n));
+		System.out.println("Suma de arreglo tamaño = 1000: " + recu.suma_arreglo(arr, n));
 		System.out.println("Máximo: " + recu.maximo(arr2, n));
 		
 	//	for(int i = 0; i < 200; i++)
