@@ -1,3 +1,10 @@
+/*Autor: José Rodrigo Mejía Velázquez
+ *Fecha: 30/10/2020
+ *Descripción: Clase Prueba1 de proyecto comparación, se llevan a cabo inserciones y eliminaciones de en la primera posición
+ *			   dentro de un arrayList y un linkedList, se toman tiempos, para comparar la eficaciencia de un cada tipo de lista
+ *			   en estas tareas.
+*/
+
 package comparacion;
 
 import java.util.ArrayList;
@@ -6,7 +13,7 @@ import java.util.Random;
 
 public class Prueba1 {
 
-	static final int TAM = 10000;
+	static final int TAM = 200000;
 
 	public static void main(String[] args) {
 		Random r = new Random();
@@ -24,7 +31,7 @@ public class Prueba1 {
 			al.remove(0);
 		fin = System.currentTimeMillis();
 		t = fin - ini;
-		System.out.println(t);
+		System.out.println("Tiempo arrayList: " + t);
 		
 		ini = System.currentTimeMillis();
 		for(int i = 0; i < TAM; i++)
@@ -33,7 +40,7 @@ public class Prueba1 {
 			ll.remove(0);
 		fin = System.currentTimeMillis();
 		t = fin - ini;
-		System.out.println(t);
+		System.out.println("Tiempo linkedLst: " + t);
 	}
 
 }
